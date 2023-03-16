@@ -1,8 +1,32 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=10496804)
-<!--
-[Link to Chap 5 Lab18](https://docs.google.com/presentation/d/1r3h2R9JwK9HK_U2Ia-zncL0BSjHV6Giu6ugNJ6yZpgc/edit#slide=id.g1715447b552_0_27)
+def main():
+    ##################################################
+    # Comlete your code here
+    ##################################################
 
-![Lab 16](https://nimbus-screenshots.s3.amazonaws.com/s/e634571b38c8923031df60fc7fc2fe3f.png)
--->
+   import random 
 
-## Complete the "main.py"
+    n1 = random.randint(0,100)
+    n2 = random.randint(0,100)
+    n3 = random.randint(0,100)
+    print (n1, n2, n3)
+
+    if n1 < n2 and n1 < n3:
+    print (f'{n1} is the smallest number')
+    elif n2 < n1 and n2 < n3:
+    print (f'{n2} is the smallest number')
+    else:
+    print (f'{n3} is the smallest number')
+
+    if n1 < n2 < n3:
+       print (f'{n1} is the smallest number')
+    elif n1 < n3 < n2:
+    print (f'{n1} is the smallest number')
+    elif n2 < n1 < n3:
+    print (f'{n2} is the smallest number')
+    elif n2 < n3 < n1:
+    print (f'{n2} is the smallest number')
+    else:
+    print (f'{n3} is the smallest number')
+
+if __name__ == '__main__':
+    main()
